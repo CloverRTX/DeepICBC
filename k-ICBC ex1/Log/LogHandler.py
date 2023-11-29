@@ -1,3 +1,4 @@
+#Log
 def train_record_log(loop, clock, str = ''):
     with open(r"Log\training_log.txt", "a+", encoding='utf-8') as f:
         f.write("========================training_log========================\n")
