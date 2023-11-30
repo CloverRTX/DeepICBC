@@ -4,22 +4,19 @@ Synthesizing a safety controller via $k$-inductive control barrier certificates 
 
 ## $k$-ICBC
 A continuous real-valued function $B(x)$ satisfies the following conditions:
-$$
-\begin{align}
-\nonumber
+```math
+\begin{cases}
 &\bigwedge_{0\le i<k}B(f^{i}(\mathbf{x},\mathbf{u}))\le0, &\forall \mathbf{x}\in X_{0}\\[2ex] 
-\nonumber
 &B(\mathbf{x})>0, &\forall \mathbf{x}\in X_{u}\\[2ex] 
-\nonumber
 &\bigwedge_{0\le i<k}B(f^{i}(\mathbf{x},\mathbf{u}))\le0\Longrightarrow B(f^{k}(\mathbf{x},\mathbf{u}))\le0, &\forall \mathbf{x}\in X
-\end{align}
-$$
+\end{cases}
+```
 
 ## Controlled discrete-time systems
 
-$$
+```math
 \mathbf{x}_{t+1} = f(\mathbf{x}_{t},\mathbf{u}_{t})
-$$
+```
 Under a safety controller $\mathbf{u}_t = u(\mathbf{x})$, system trajectories remain in the safe area.
 
 ### Prerequisites
