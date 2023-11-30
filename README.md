@@ -34,7 +34,11 @@ To start synthesis:
 ```
 python k-ICBC ex1/main.py
 ```
-
+### Tips
+Some existing results are saved in Pre_Results.
+```
+k-ICBC ex1/NN_Train_Result/Pre_Results
+```
 
 ## Authors
 
