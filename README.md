@@ -1,19 +1,19 @@
 # DeepICBC
 
-Synthesizing a safety controller via $k$-inductive control barrier certificates($k$-ICBC) for controlled discrete-time systems.
+Synthesizing a safety controller via $k$-inductive control barrier certificates ($k$-ICBC) for controlled discrete-time systems.
 
 ## $k$-ICBC
-\begin{subequations}
-	\begin{align}
-		&\bigwedge_{0\le i<k}B(f^{i}(\mathbf{x},\mathbf{u}))\le0,&\forall \mathbf{x}\in X_{0}\\
-		&B(\mathbf{x})>0,&\forall \mathbf{x}\in X_{u}\\
-		&\bigwedge_{0\le i<k}B(f^{i}(\mathbf{x},\mathbf{u}))\le0\Longrightarrow B(f^{k}(\mathbf{x},\mathbf{u}))\le0,&\forall \mathbf{x}\in X.
-	\end{align}
-\end{subequations}
-
-
+A continuous real-valued function $B(x)$ satisfies the following conditions:
+$$
+\begin{cases}
+&\bigwedge_{0\le i<k}B(f^{i}(\mathbf{x},\mathbf{u}))\le0, &\forall \mathbf{x}\in X_{0}\\[2ex]
+&B(\mathbf{x})>0,&\forall \mathbf{x}\in X_{u}\\[2ex]
+&\bigwedge_{0\le i<k}B(f^{i}(\mathbf{x},\mathbf{u}))\le0\Longrightarrow B(f^{k}(\mathbf{x},\mathbf{u}))\le0,&\forall \mathbf{x}\in X
+\end{cases}
+$$
 ## Controlled discrete-time systems
-$$\mathbf{x}_{t+1}=f(\mathbf{x}_{t},\mathbf{u}_{t})$$
+$\mathbf{x}_{t+1}=f(\mathbf{x}_{t},\mathbf{u}_{t})$
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
