@@ -5,12 +5,13 @@ Synthesizing a safety controller via $k$-inductive control barrier certificates 
 ## $k$-ICBC
 A continuous real-valued function $B(x)$ satisfies the following conditions:
 ```math
-\bigwedge_{0\le i<k}B(f^{i}(\mathbf{x},\mathbf{u}))\le0, \forall \mathbf{x}\in X_{0}
-```
-<!--
+\begin{cases}
+&\bigwedge_{0\le i<k}B(f^{i}(\mathbf{x},\mathbf{u}))\le0, &\forall \mathbf{x}\in X_{0}\\[2ex]
 &B(\mathbf{x})>0,&\forall \mathbf{x}\in X_{u}\\[2ex]
 &\bigwedge_{0\le i<k}B(f^{i}(\mathbf{x},\mathbf{u}))\le0\Longrightarrow B(f^{k}(\mathbf{x},\mathbf{u}))\le0,&\forall \mathbf{x}\in X
--->
+\end{cases}
+```
+
 ## Controlled discrete-time systems
 
 ```math
@@ -28,11 +29,10 @@ sympy
 gurobipy
 ```
 
-## Running the benchmarks
-To start synthesis:
-```
-python k-ICBC ex1/main.py
-```
+## Running the tests
+
+Explain how to run the automated tests for this system
+
 
 ## Authors
 
