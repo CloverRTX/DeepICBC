@@ -12,7 +12,7 @@ $$
 \end{cases}
 $$
 ## Controlled discrete-time systems
-$\mathbf{x}_{t+1}=f(\mathbf{x}_{t},\mathbf{u}_{t})$
+$$\mathbf{x}_{t+1}=f(\mathbf{x}_{t},\mathbf{u}_{t})$$
 
 ## Getting Started
 
