@@ -29,9 +29,11 @@ sympy
 gurobipy
 ```
 
-## Running the tests
-
-Explain how to run the automated tests for this system
+## Running the benchmarks
+To start synthesis:
+```
+python k-ICBC ex1/main.py
+```
 
 
 ## Authors
