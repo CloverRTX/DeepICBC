@@ -1,11 +1,9 @@
 import matplotlib.pyplot as plt
-from matplotlib import cm
 import numpy as np
 import torch
 from Loss_Encoding import LossHandler
 import superp
 
-# 绘制状态点的移动路线
 def path_simulation(fx_, control_model):
 
     fig = plt.figure(
@@ -17,8 +15,8 @@ def path_simulation(fx_, control_model):
     ax.grid()
 
 
-    # ——————————————————————————————————绘制动力系统的全局图像——————————————————————————————————
-    # X全域
+    # ——————————————————————————————————Plot——————————————————————————————————
+    # X
     ax.fill_between([-np.pi, np.pi], -5, 5, facecolor='gray', alpha=0.5)
 
     seta = np.arange(0, 2 * np.pi, 0.01)
@@ -37,10 +35,9 @@ def path_simulation(fx_, control_model):
     ax.fill_between(x3, -np.sqrt(9 - x3 ** 2), np.sqrt(9 - x3 ** 2), facecolor='red', alpha=0.4)
     ax.axis('equal')
 
-    # ——————————————————————————————————起始点——————————————————————————————————
+    # ————————————————————————————————simulation————————————————————————————————————
     k_ = 5000
 
-    # 初始区域取点
     x_data = np.linspace(-np.pi, np.pi, 10)
     y_data = np.linspace(-5, 5, 10)
 

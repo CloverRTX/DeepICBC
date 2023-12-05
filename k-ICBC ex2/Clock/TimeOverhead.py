@@ -18,9 +18,9 @@ class TimeOverhead:
         hour = duration % (60 * 60 * 24) // (60 * 60)
         minute = duration % (60 * 60) // 60
         second = duration % 60
-        print(f"======================={str}时间统计=============================")
-        print(f"{str}花费时间 : {day}天{hour}小时{minute}分钟{second}秒")
-        print("=================================================================")
+        print(f"=========={str}时间统计==========")
+        print(f"{str} cost : {day} day(s), {hour} hour(s), {minute} minute(s), {second} second(s)")
+        print("==============================")
 
 
     def timeCost_str(self):
@@ -29,4 +29,4 @@ class TimeOverhead:
         hour = duration % (60 * 60 * 24) // (60 * 60)
         minute = duration % (60 * 60) // 60
         second = duration % 60
-        return f"{day}天{hour}小时{minute}分钟{second}秒"
+        return f"{day} day(s), {hour} hour(s), {minute} minute(s), {second} second(s)"
