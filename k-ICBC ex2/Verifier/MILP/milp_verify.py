@@ -61,7 +61,7 @@ def MILP_opt_unsafeCon(Bx):
     Tag = 0
     result0, counter_ex0 = MILP_opt_unsafeCon_block(Bx)
     if not result0:
-        print(f"counterexamples when k = {Tag}")
+        # print(f"counterexamples when k = {Tag}")
         print(f"counterexamples : {counter_ex0}")
         Counter_Ex_Add(filename, counter_ex0, 1)
         return False, counter_ex0, Tag
@@ -99,13 +99,6 @@ def MILP_opt_initCon0(Bx, Col, fx_):
     else:
         return False, counter_ex
 
-
-    # 不存在反例
-    #if m.objVal <= gama:
-    #    return True, []
-    # 存在反例
-    #else:
-    #    return False, counter_ex
 
 # x1
 def MILP_opt_initCon1(Bx, Col, fx_):
