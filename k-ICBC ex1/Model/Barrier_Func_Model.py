@@ -1,16 +1,10 @@
 from torch import nn
 
-# 障碍函数
-#构建神经网络模型
-
 class NN_Barrier(nn.Module):
 
 
     def __init__(self, input_dim, output_dim):
-        """
-        :param input_dim:输入数据维度
 
-        """
         self.input_dim = input_dim
         self.output_dim = output_dim
         super(NN_Barrier, self).__init__()
@@ -28,15 +22,6 @@ class NN_Barrier(nn.Module):
         return x.squeeze(1)
 
 
-
-    # 修改NN权重
-    def setWeight(self, key = None, new_value = None):
-
-        for k, v in self.state_dict().items():
-            if k == key:
-                self.state_dict()[key].copy_(new_value)
-
-
     def serveForVerify(self):
         W_b_list = []
         for i in self.state_dict():
@@ -44,7 +29,13 @@ class NN_Barrier(nn.Module):
             W_b_list.append(var)
         return W_b_list
 
+    '''
+    def setWeight(self, key=None, new_value=None):
+        for k, v in self.state_dict().items():
+            if k == key:
+                self.state_dict()[key].copy_(new_value)
 
+    
     def getNNEachLayerReturn(self, point):
         y1 = self.layers[0](point)
         z1 = self.layers[1](y1)
@@ -57,3 +48,4 @@ class NN_Barrier(nn.Module):
         print(f"Y2 = {y2}")
         print(f"Z2 = {z2}")
         print(f"Y3 = {y3}")
+    '''

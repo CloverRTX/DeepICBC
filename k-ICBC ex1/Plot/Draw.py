@@ -33,7 +33,7 @@ def path_simulation(fx_, control_model):
     ax.fill_between([-5, 5], -5, 5, facecolor='yellow', alpha=0.1)
 
     # ——————————————————————————————————起始点——————————————————————————————————
-    k_ = 3000
+    k_ = 10000
 
     # 初始区域取点
     x_data = np.linspace(-3, -1, 5)
