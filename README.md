@@ -2,15 +2,6 @@
 
 Synthesizing a safety controller via $k$-inductive control barrier certificates ($k$-ICBC) for controlled discrete-time systems.
 
-## $k$-ICBC
-A continuous real-valued function $B(x)$ satisfies the following conditions:
-```math
-\begin{cases}
-&\bigwedge_{0\le i<k}B(f^{i}(\mathbf{x},\mathbf{u}))\le0, &\forall \mathbf{x}\in X_{0}\\[2ex] 
-&B(\mathbf{x})>0, &\forall \mathbf{x}\in X_{u}\\[2ex] 
-&\bigwedge_{0\le i<k}B(f^{i}(\mathbf{x},\mathbf{u}))\le0\Longrightarrow B(f^{k}(\mathbf{x},\mathbf{u}))\le0, &\forall \mathbf{x}\in X
-\end{cases}
-```
 
 ## Controlled discrete-time systems
 
@@ -39,6 +30,20 @@ Some existing results are saved in Pre_Results.
 ```
 k-ICBC ex1/NN_Train_Result/Pre_Result
 ```
+If our work helps you, please kindly cite our paper:
+```
+@ARTICLE{10538169,
+  author={Ren, Tianxiang and Lin, Wang and Ding, Zuohua},
+  journal={IEEE Transactions on Reliability}, 
+  title={Formal Synthesis of Safety Controllers via $k$-Inductive Control Barrier Certificates}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-10},
+  keywords={Safety;Control systems;Discrete-time systems;Training;Polynomials;Neural networks;Supervised learning;  $k$  -inductive control barrier certificates ( $k$ -ICBCs);discrete-time dynamical systems;formal verification;mixed integer linear programs;safety controllers},
+  doi={10.1109/TR.2024.3399739}}
+```
+
 
 ## Authors
 
